@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.t3h.basemvvm.data.model.db.HistoryModel
 
-@Database(version = 1, exportSchema = false,
+@Database(version = 2, exportSchema = false,
     entities = [HistoryModel::class])
 abstract class AppDatabase : RoomDatabase() {
     abstract fun databaseDao(): DatabaseDao
